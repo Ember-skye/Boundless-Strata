@@ -157,7 +157,16 @@ Discover:
 
 ## 📷 Screenshots
 
-*(Coming Soon)*
+<img width="1920" height="1080" alt="Screenshot (756)" src="https://github.com/user-attachments/assets/cd3d4505-e03e-4667-9e39-f46db1a7baa5" />
+<img width="1920" height="1080" alt="Screenshot (755)" src="https://github.com/user-attachments/assets/eff29d30-7cca-4093-b5ff-d65d509468c5" />
+<img width="1920" height="1080" alt="Screenshot (754)" src="https://github.com/user-attachments/assets/f9b1fa3e-7dba-4202-b5fb-7780d2089d30" />
+<img width="1920" height="1080" alt="Screenshot (753)" src="https://github.com/user-attachments/assets/04983816-848a-4604-9e84-c99f4f0ca41c" />
+<img width="1920" height="1080" alt="Screenshot (752)" src="https://github.com/user-attachments/assets/6e361c66-aa4b-4a08-aa0c-cc3a5acb20a9" />
+<img width="1920" height="1080" alt="Screenshot (751)" src="https://github.com/user-attachments/assets/d67c790e-d254-4206-b12e-109845317c3e" />
+<img width="1920" height="1080" alt="Screenshot (750)" src="https://github.com/user-attachments/assets/7e57138e-ebff-43f7-a77c-f896fb920007" />
+<img width="1920" height="1080" alt="Screenshot (749)" src="https://github.com/user-attachments/assets/86e1ac19-63c7-450a-aea1-bf96ba9b1fc3" />
+<img width="1920" height="1080" alt="Screenshot (757)" src="https://github.com/user-attachments/assets/dc4a5211-1046-4d5a-bd70-e5d45ef91cee" />
+
 
 ---
 
