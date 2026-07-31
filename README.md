@@ -1,98 +1,265 @@
-# Boundless Strata
+# 🌍 Boundless Strata
 
-A 2D sandbox survival game built from scratch in Python/Pygame — procedurally generated terrain, biome-blended worlds, dynamic liquid simulation, and layered underground lighting.
+*A procedurally generated 2D sandbox survival game built entirely in Python using Pygame.*
 
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
-![Python](https://img.shields.io/badge/python-3.x-blue)
-![Pygame](https://img.shields.io/badge/engine-Pygame-green)
-
----
-
-## About
-
-**Boundless Strata** is a survival sandbox game inspired by genre classics like Terraria, built as a from-scratch engine rather than a wrapper around an existing framework. The focus has been on getting the systems-level foundations right: lazy infinite-feeling world generation, believable biome transitions, cellular-automaton liquid physics, and a lighting model that actually makes underground exploration feel atmospheric.
-
-The world spans **100,000 × 5,000 tiles**, generated on the fly as the player explores, with deterministic per-column seeding so the same world is always reproducible.
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Pygame](https://img.shields.io/badge/Pygame-2.x-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
-## Features
+## 📖 About
 
-### 🌍 Procedural World Generation
-- Lazy column generation — only terrain near the player is generated and held in memory, time-budgeted per frame
-- 7 distinct biomes (Sea, Tundra, Grassland, Forest, Jungle, Savanna, Desert), each with unique surface/subsurface blocks, wall types, and tree generation
-- 12-tile dithered blend zones at biome borders for natural, non-jarring transitions
-- Layered geology, ravines, and floating islands
+Boundless Strata is a sandbox survival game inspired by games like **Minecraft**, **Terraria**, and **Starbound**, while being written completely from scratch in **Python** using **Pygame**.
 
-### 💧 Liquid Simulation
-- Cellular-automaton-based water and lava simulation
-- Water/lava interactions (obsidian generation on contact)
-- Sparse liquid storage — only columns containing liquid are tracked and saved
+Explore a massive procedurally generated world, gather resources, craft tools, build structures, fight enemies, survive hunger and thirst, and discover underground caves filled with valuable ores.
 
-### 💡 Lighting System
-- Two-tier darkness model: gentle dimming near the surface, near-total darkness deep underground
-- Dynamic light sources: torches, lamps, campfires, lava glow, and player-emitted light
-- Box-blurred lighting for smooth gradients, written via fast pixel-level surface manipulation
-
-### 🎮 Core Gameplay
-- Full day/night cycle (30-minute real-time days) with enemy/animal spawn rules tied to time of day
-- Mining, building, and combat with a context-aware input system
-- Crafting chains: basic crafting, workbench, furnace smelting, campfire cooking, and anvil armor crafting
-- Inventory, hotbar, chest storage, creative mode, and a zoomable/pannable world map
-- Procedurally drawn tile textures (no sprite sheets) for grass, stone, sand, snow, ice, and more
-
-### 💾 Save System
-- Column-based JSON serialization — only generated/explored terrain is saved, keeping file sizes manageable
-- Backward-compatible save loading, with automatic upgrades from older save formats
+The project serves both as a playable game and as an experiment in creating a large-scale sandbox engine using Python.
 
 ---
 
-## Controls
+## ✨ Features
 
-| Key / Input | Action |
-|---|---|
-| `A` / `D` / `Arrow Keys` | Move |
-| `W` / `Space` | Jump |
-| `Left Click` | Mine / attack / place (context-based) |
-| `Right Click` | Swap inventory items / arm item throw |
-| `E` | Inventory & crafting |
-| `TAB` | World map |
-| `F1` | Debug overlay |
-| `F5` | Quick save |
-| `F12` | Toggle creative mode |
-| `ESC` | Pause menu |
+### 🌎 Massive Procedural World
 
-*(Full control list in-game via the Help menu.)*
+- 100,000 tile wide world
+- 5,000 tile height
+- Lazy world generation for improved performance
+- Deterministic world generation
+- Floating islands
+- Large cave systems
+- Ravines
+- Underground geology layers
+- Rare ore generation
 
 ---
 
-## Tech Stack
+### 🌲 Multiple Biomes
 
-- **Language:** Python
-- **Engine:** Pygame
-- **Rendering:** Numpy-vectorized parallax and pixel manipulation for performance
-- **World Storage:** JSON, column-based sparse serialization
+Explore different environments including:
 
----
+- Sea
+- Grasslands
+- Forests
+- Jungles
+- Savannas
+- Tundras
+- Deserts
 
-## Status
+Each biome has its own:
 
-This project is under active development. Current focus areas include dusk lighting refinement and additional gameplay polish. See [`GAME_GUIDE.md`](./GAME_GUIDE.md) for a full features and controls overview.
-
----
-
-## Download
-
-**Windows only.** This is a closed-source project — the source code is not published in this repository. A prebuilt executable is available under [Releases](../../releases).
-
-1. Go to the [Releases](../../releases) page
-2. Download the latest `BoundlessStrata.exe`
-3. Run it — no installation required
-
-> Windows Defender or your antivirus may flag the `.exe` on first run since it's an unsigned, self-contained PyInstaller build. This is a known false-positive pattern for this kind of packaging, not a sign of anything malicious. Click "More info" → "Run anyway" if prompted.
+- terrain
+- trees
+- decorations
+- sky colors
+- resources
 
 ---
 
-## License & Source Availability
+### ⛏️ Mining & Building
 
-This repository contains only the compiled game (Windows release) and project documentation. The source code is private and not licensed for reuse, modification, or redistribution. All rights reserved.
+- Break blocks
+- Place blocks
+- Build houses
+- Create storage
+- Light caves with torches
+- Construct workstations
+
+---
+
+### ⚒ Crafting System
+
+Craft dozens of items including:
+
+- Pickaxes
+- Axes
+- Swords
+- Armor
+- Furnaces
+- Campfires
+- Workbenches
+- Chests
+- Torches
+- Building blocks
+
+Multiple crafting stations are available throughout progression.
+
+---
+
+### ❤️ Survival Mechanics
+
+Manage:
+
+- Health
+- Hunger
+- Thirst
+
+Watch out for:
+
+- Fall damage
+- Lava
+- Starvation
+- Dehydration
+- Hostile enemies
+
+---
+
+### ⚔ Combat
+
+Fight enemies using:
+
+- Swords
+- Bows
+- Arrows
+
+Enemies include:
+
+- Slimes
+- Zombies
+
+Equip armor to increase survivability.
+
+---
+
+### 🌧 Dynamic Environment
+
+- Day & Night cycle
+- Weather effects
+- Dynamic lighting
+- Liquid simulation
+- Water and lava interaction
+
+---
+
+### 🎒 Inventory System
+
+- Hotbar
+- Inventory
+- Crafting menu
+- Armor slots
+- Chest storage
+- Item stacking
+- Tool durability
+
+---
+
+### 🗺 Exploration
+
+Discover:
+
+- Underground cave systems
+- Floating islands
+- Rare ores
+- Large forests
+- Deep lava regions
+
+---
+
+## 📷 Screenshots
+
+*(Coming Soon)*
+
+---
+
+## 🎮 Controls
+
+| Key | Action |
+|------|--------|
+| A / D | Move |
+| W / Space | Jump |
+| Left Click | Mine / Attack / Place Block |
+| Right Click | Interact |
+| Mouse Wheel | Switch Hotbar |
+| E | Inventory & Crafting |
+| TAB | World Map |
+| F | Eat Food |
+| F5 | Quick Save |
+| F11 | Fullscreen |
+| ESC | Pause |
+
+---
+
+## 🛠 Built With
+
+- Python
+- Pygame
+- NumPy
+
+---
+
+## 📦 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/YourUsername/Boundless-Strata.git
+
+cd Boundless-Strata
+```
+
+### Install dependencies
+
+```bash
+pip install pygame numpy opensimplex
+```
+
+### Run
+
+```bash
+python Boundless_Strata_v6.py
+```
+
+---
+
+## 💾 Saving
+
+The game automatically stores saves inside:
+
+```
+~/.boundless_strata_saves
+```
+
+---
+
+## 🚧 Current Status
+
+Boundless Strata is currently under active development.
+
+Planned additions include:
+
+- More enemies
+- Boss fights
+- NPCs
+- Villages
+- Better world generation
+- More crafting recipes
+- Better combat
+- Multiplayer (experimental idea)
+
+---
+
+## 🤝 Contributions
+
+Suggestions, bug reports and pull requests are always welcome.
+
+If you find a bug or have an idea, feel free to open an Issue.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👤 Author
+
+**Ember_skye**
+
+BCA Student | Python Developer | Indie Game Developer
+
+
+
+---
+
+*"Every block broken is another step into the unknown."*
