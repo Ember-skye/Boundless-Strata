@@ -77,23 +77,22 @@ The world spans **100,000 × 5,000 tiles**, generated on the fly as the player e
 
 ## Status
 
-This project is under active development. Current focus areas include dusk lighting refinement and a mouse-only HUD input system. See [`Terraria_Clone_Documentation.md`](./Terraria_Clone_Documentation.md) *(consider renaming to `docs/DESIGN.md`)* for full system documentation covering world config, biomes, combat, crafting recipes, UI, and rendering internals.
+This project is under active development. Current focus areas include dusk lighting refinement and additional gameplay polish. See [`GAME_GUIDE.md`](./GAME_GUIDE.md) for a full features and controls overview.
 
 ---
 
-## Getting Started
+## Download
 
-```bash
-git clone https://github.com/<your-username>/boundless-strata.git
-cd boundless-strata
-pip install -r requirements.txt
-python main.py
-```
+**Windows only.** This is a closed-source project — the source code is not published in this repository. A prebuilt executable is available under [Releases](../../releases).
 
-*(Update the clone URL, entry-point filename, and requirements once finalized.)*
+1. Go to the [Releases](../../releases) page
+2. Download the latest `BoundlessStrata.exe`
+3. Run it — no installation required
+
+> Windows Defender or your antivirus may flag the `.exe` on first run since it's an unsigned, self-contained PyInstaller build. This is a known false-positive pattern for this kind of packaging, not a sign of anything malicious. Click "More info" → "Run anyway" if prompted.
 
 ---
 
-## License
+## License & Source Availability
 
-*(Add a license of your choice — MIT is a common pick for personal/portfolio projects.)*
+This repository contains only the compiled game (Windows release) and project documentation. The source code is private and not licensed for reuse, modification, or redistribution. All rights reserved.
