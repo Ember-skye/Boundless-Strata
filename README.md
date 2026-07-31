@@ -192,7 +192,7 @@ Discover:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YourUsername/Boundless-Strata.git
+git clone https://github.com/Ember-skye/Boundless-Strata.git
 
 cd Boundless-Strata
 ```
