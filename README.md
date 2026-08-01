@@ -7,7 +7,11 @@ A 2D sandbox survival game built from scratch in Python with Pygame — inspired
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
+Download
 
+⬇ [Download the latest Windows build](https://github.com/Ember-skye/Boundless-Strata/releases/latest) — no Python or setup required. Just download BoundlessStrata.exe, unzip if needed, and run.
+
+---
 ## Features
 
 ### Procedural World Generation
