@@ -1,6 +1,6 @@
 # Boundless Strata
 
-A 2D sandbox survival game built from scratch in Python with Pygame — inspired by Terraria. Explore a 100,000-tile-wide procedurally generated world spanning 7 biomes, mine and craft your way through the tech tree, fight off nighttime enemies, and dig deep underground where torches are the only thing between you and the dark.
+A 2D sandbox survival game built from scratch in Python with Pygame — inspired by Terraria. Explore a 100,000-tile-wide procedurally generated world spanning 7 biomes, mine and craft your way through tiered gear and armor, fight off nighttime enemies, and dig deep underground where torches are the only thing between you and the dark.
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![Pygame](https://img.shields.io/badge/pygame-2.x-green)
@@ -71,8 +71,6 @@ For the complete breakdown of every block, item, recipe, biome, and system, see 
 <img width="1920" height="1080" alt="Screenshot (752)" src="https://github.com/user-attachments/assets/46c2cc97-f46b-4c82-a2dc-17859dc1ec8f" />
 <img width="1920" height="1080" alt="Screenshot (754)" src="https://github.com/user-attachments/assets/544ac658-f50c-439b-97dd-ff8a151e17a1" />
 <img width="1920" height="1080" alt="Screenshot (756)" src="https://github.com/user-attachments/assets/7ab9aac5-e7e1-4d77-aeb0-eb3cb896ce39" />
-
-
 
 ---
 
@@ -159,9 +157,7 @@ Boundless Strata is a solo hobby project under active development. Current versi
 
 This is currently a personal project, but bug reports, suggestions, and pull requests are welcome — feel free to open an issue.
 
----<img width="1920" height="1080" alt="Screenshot (750)" src="https://github.com/user-attachments/assets/ca3c0af2-7adf-4ce7-99f4-0c8d25f7257c" />
-<img width="1920" height="1080" alt="Screenshot (750)" src="https://github.com/user-attachments/assets/ce3d8d2e-bb07-4090-8101-061335db29ed" />
-
+---
 
 ## 👤 Author
 
